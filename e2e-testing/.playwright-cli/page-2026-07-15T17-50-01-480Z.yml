@@ -1,0 +1,35 @@
+- generic [ref=f1e18]:
+  - banner [ref=f1e19]:
+    - generic [ref=f1e20]:
+      - generic [ref=f1e21]: ResumeRocket
+      - navigation [ref=f1e22]:
+        - link "Profile" [ref=f1e23] [cursor=pointer]:
+          - /url: /profile
+        - link "Tailor a Resume" [ref=f1e24] [cursor=pointer]:
+          - /url: /tailor
+        - link "My Resumes" [ref=f1e25] [cursor=pointer]:
+          - /url: /resumes
+        - button "Sign out" [ref=f1e26] [cursor=pointer]
+  - main [ref=f1e27]:
+    - generic [ref=f1e260]:
+      - heading "Compare Resumes" [level=1] [ref=f1e261]
+      - generic [ref=f1e262]:
+        - generic [ref=f1e263]:
+          - generic [ref=f1e264]:
+            - paragraph [ref=f1e265]: Left
+            - paragraph [ref=f1e266]: We are looking for a Senior Software Eng... (Copy)
+            - paragraph [ref=f1e267]: Acme Corp
+          - generic [ref=f1e268]:
+            - paragraph [ref=f1e269]: Right
+            - paragraph [ref=f1e270]: We are looking for a Senior Software Eng...
+            - paragraph [ref=f1e271]: Acme Corp
+        - heading "Summary" [level=2] [ref=f1e273]
+        - generic [ref=f1e276]:
+          - heading "Experience" [level=2] [ref=f1e277]
+          - paragraph [ref=f1e279]: No content
+        - generic [ref=f1e280]:
+          - heading "Education" [level=2] [ref=f1e281]
+          - paragraph [ref=f1e283]: No content
+        - generic [ref=f1e284]:
+          - heading "Skills" [level=2] [ref=f1e285]
+          - paragraph [ref=f1e287]: No content

@@ -1,0 +1,20 @@
+- generic [ref=f1e18]:
+  - banner [ref=f1e19]:
+    - generic [ref=f1e20]:
+      - generic [ref=f1e21]: ResumeRocket
+      - navigation [ref=f1e22]:
+        - link "Profile" [ref=f1e23] [cursor=pointer]:
+          - /url: /profile
+        - link "Tailor a Resume" [active] [ref=f1e24] [cursor=pointer]:
+          - /url: /tailor
+        - link "My Resumes" [ref=f1e25] [cursor=pointer]:
+          - /url: /resumes
+        - button "Sign out" [ref=f1e26] [cursor=pointer]
+  - main [ref=f1e27]:
+    - generic [ref=f1e127]:
+      - heading "Tailor a Resume" [level=1] [ref=f1e128]
+      - paragraph [ref=f1e129]: Paste the job description you're applying for. We'll analyze it against your master profile and suggest resume changes you can review before saving.
+      - generic [ref=f1e130]:
+        - generic [ref=f1e131]: Job description
+        - textbox "Job description" [ref=f1e132]
+      - button "Tailor my resume" [ref=f1e134] [cursor=pointer]

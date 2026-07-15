@@ -1,0 +1,26 @@
+- generic [ref=f1e18]:
+  - banner [ref=f1e19]:
+    - generic [ref=f1e20]:
+      - generic [ref=f1e21]: ResumeRocket
+      - navigation [ref=f1e22]:
+        - link "Profile" [ref=f1e23] [cursor=pointer]:
+          - /url: /profile
+        - link "Tailor a Resume" [ref=f1e24] [cursor=pointer]:
+          - /url: /tailor
+        - link "My Resumes" [active] [ref=f1e25] [cursor=pointer]:
+          - /url: /resumes
+        - button "Sign out" [ref=f1e26] [cursor=pointer]
+  - main [ref=f1e27]:
+    - generic [ref=f1e115]:
+      - generic [ref=f1e116]:
+        - heading "My Resumes" [level=1] [ref=f1e117]
+        - link [ref=f1e118] [cursor=pointer]:
+          - /url: /tailor
+          - button "Tailor a new resume" [ref=f1e119]
+      - generic [ref=f1e120]:
+        - generic [ref=f1e121]:
+          - generic [ref=f1e122]: Filter by company
+          - textbox "Filter by company" [ref=f1e123]
+        - button "Compare selected (0/2)" [disabled] [ref=f1e124]
+      - list [ref=f1e125]:
+        - paragraph [ref=f1e126]: No tailored resumes yet.

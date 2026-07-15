@@ -53,8 +53,10 @@ e2e-testing/
 ├── playwright.config.ts   # base URL, browsers, auto-started dev server
 ├── tests/
 │   ├── auth.spec.ts       # register, login, logout, protected-route redirects
-│   └── profile.spec.ts    # editing contact info and skills on the profile page
+│   ├── profile.spec.ts    # editing contact info, education, experience, and skills
+│   └── resumes.spec.ts    # tailoring, editing, cloning, comparing resumes
 └── utils/
     ├── test-data.ts       # unique test-user generator
-    └── register.ts        # shared "register a fresh user" helper
+    ├── register.ts        # shared "register a fresh user" helper
+    └── tailor.ts          # shared "tailor a resume from a job description" helper
 ```

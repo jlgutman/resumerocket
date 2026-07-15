@@ -1,0 +1,45 @@
+- generic [ref=f1e18]:
+  - banner [ref=f1e19]:
+    - generic [ref=f1e20]:
+      - generic [ref=f1e21]: ResumeRocket
+      - navigation [ref=f1e22]:
+        - link "Profile" [ref=f1e23] [cursor=pointer]:
+          - /url: /profile
+        - link "Tailor a Resume" [ref=f1e24] [cursor=pointer]:
+          - /url: /tailor
+        - link "My Resumes" [ref=f1e25] [cursor=pointer]:
+          - /url: /resumes
+        - button "Sign out" [ref=f1e26] [cursor=pointer]
+  - main [ref=f1e27]:
+    - generic [ref=f1e288]:
+      - generic [ref=f1e289]:
+        - heading "My Resumes" [level=1] [ref=f1e290]
+        - link [ref=f1e291] [cursor=pointer]:
+          - /url: /tailor
+          - button "Tailor a new resume" [ref=f1e292]
+      - generic [ref=f1e293]:
+        - generic [ref=f1e294]:
+          - generic [ref=f1e295]: Filter by company
+          - textbox "Filter by company" [ref=f1e296]
+        - button "Compare selected (0/2)" [disabled] [ref=f1e297]
+      - list [ref=f1e298]:
+        - listitem [ref=f1e299]:
+          - generic [ref=f1e300]:
+            - checkbox "Select We are looking for a Senior Software Eng... (Copy) for comparison" [ref=f1e301]
+            - generic [ref=f1e302]:
+              - link "We are looking for a Senior Software Eng... (Copy)" [ref=f1e303] [cursor=pointer]:
+                - /url: /resumes/10
+              - paragraph [ref=f1e304]: Senior Software Engineer at Acme Corp · draft · 7/15/2026
+          - generic [ref=f1e305]:
+            - button "Clone" [ref=f1e306] [cursor=pointer]
+            - button "Regenerate" [ref=f1e307] [cursor=pointer]
+        - listitem [ref=f1e308]:
+          - generic [ref=f1e309]:
+            - checkbox "Select We are looking for a Senior Software Eng... for comparison" [ref=f1e310]
+            - generic [ref=f1e311]:
+              - link "We are looking for a Senior Software Eng..." [ref=f1e312] [cursor=pointer]:
+                - /url: /resumes/9
+              - paragraph [ref=f1e313]: Senior Software Engineer at Acme Corp · draft · 7/15/2026
+          - generic [ref=f1e314]:
+            - button "Clone" [ref=f1e315] [cursor=pointer]
+            - button "Regenerate" [ref=f1e316] [cursor=pointer]

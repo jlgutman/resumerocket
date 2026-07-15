@@ -1,0 +1,14 @@
+- generic [ref=f5e3]:
+  - banner [ref=f5e4]:
+    - generic [ref=f5e5]:
+      - generic [ref=f5e6]: ResumeRocket
+      - navigation [ref=f5e7]:
+        - link "Profile" [ref=f5e8] [cursor=pointer]:
+          - /url: /profile
+        - link "Tailor a Resume" [ref=f5e9] [cursor=pointer]:
+          - /url: /tailor
+        - link "My Resumes" [ref=f5e10] [cursor=pointer]:
+          - /url: /resumes
+        - button "Sign out" [ref=f5e11] [cursor=pointer]
+  - main [ref=f5e12]:
+    - paragraph [ref=f5e13]: Loading resume…

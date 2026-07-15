@@ -1,0 +1,17 @@
+- generic [ref=f3e4]:
+  - heading "Create your ResumeRocket account" [level=1] [ref=f3e5]
+  - generic [ref=f3e6]:
+    - generic [ref=f3e7]: Full name
+    - textbox "Full name" [ref=f3e8]: Duplicate User
+  - generic [ref=f3e9]:
+    - generic [ref=f3e10]: Email
+    - textbox "Email" [ref=f3e11]: explore-1784137182@example.com
+  - generic [ref=f3e12]:
+    - generic [ref=f3e13]: Password
+    - textbox "Password" [ref=f3e14]: SuperSecret123
+  - paragraph [ref=f3e18]: Could not create an account with those details.
+  - button "Create account" [ref=f3e15] [cursor=pointer]
+  - paragraph [ref=f3e16]:
+    - text: Already have an account?
+    - link "Sign in" [ref=f3e17] [cursor=pointer]:
+      - /url: /login

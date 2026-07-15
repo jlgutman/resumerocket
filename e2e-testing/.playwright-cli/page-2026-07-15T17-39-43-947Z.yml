@@ -1,0 +1,94 @@
+- generic [ref=f1e18]:
+  - banner [ref=f1e19]:
+    - generic [ref=f1e20]:
+      - generic [ref=f1e21]: ResumeRocket
+      - navigation [ref=f1e22]:
+        - link "Profile" [ref=f1e23] [cursor=pointer]:
+          - /url: /profile
+        - link "Tailor a Resume" [ref=f1e24] [cursor=pointer]:
+          - /url: /tailor
+        - link "My Resumes" [ref=f1e25] [cursor=pointer]:
+          - /url: /resumes
+        - button "Sign out" [ref=f1e26] [cursor=pointer]
+  - main [ref=f1e27]:
+    - generic [ref=f1e28]:
+      - generic [ref=f1e29]:
+        - heading "Your Master Profile" [level=1] [ref=f1e30]
+        - generic [ref=f1e31]:
+          - generic [ref=f1e32]:
+            - generic [ref=f1e33]: Full name
+            - textbox "Full name" [ref=f1e34]
+          - generic [ref=f1e35]:
+            - generic [ref=f1e36]: Email
+            - textbox "Email" [ref=f1e37]
+          - generic [ref=f1e38]:
+            - generic [ref=f1e39]: Phone
+            - textbox "Phone" [ref=f1e40]
+          - generic [ref=f1e41]:
+            - generic [ref=f1e42]: Location
+            - textbox "Location" [ref=f1e43]
+          - generic [ref=f1e45]:
+            - generic [ref=f1e46]: Links (portfolio, LinkedIn, GitHub — comma-separated)
+            - textbox "Links (portfolio, LinkedIn, GitHub — comma-separated)" [ref=f1e47]
+        - button "Save profile" [ref=f1e49] [cursor=pointer]
+      - generic [ref=f1e50]:
+        - heading "Education" [level=2] [ref=f1e51]
+        - list [ref=f1e52]:
+          - paragraph [ref=f1e53]: No education added yet.
+        - generic [ref=f1e54]:
+          - generic [ref=f1e55]:
+            - generic [ref=f1e56]: Institution
+            - textbox "Institution" [ref=f1e57]
+          - generic [ref=f1e58]:
+            - generic [ref=f1e59]: Credential
+            - textbox "Credential" [ref=f1e60]
+          - generic [ref=f1e61]:
+            - generic [ref=f1e62]: Field of study
+            - textbox "Field of study" [ref=f1e63]
+          - generic [ref=f1e64]:
+            - generic [ref=f1e65]:
+              - generic [ref=f1e66]: Start date
+              - textbox "Start date" [ref=f1e67]
+            - generic [ref=f1e68]:
+              - generic [ref=f1e69]: End date
+              - textbox "End date" [ref=f1e70]
+          - generic [ref=f1e72]:
+            - generic [ref=f1e73]: Description
+            - textbox "Description" [ref=f1e74]
+        - button "Add education" [ref=f1e76] [cursor=pointer]
+      - generic [ref=f1e77]:
+        - heading "Work Experience" [level=2] [ref=f1e78]
+        - list [ref=f1e79]:
+          - paragraph [ref=f1e80]: No work experience added yet.
+        - generic [ref=f1e81]:
+          - generic [ref=f1e82]:
+            - generic [ref=f1e83]: Company
+            - textbox "Company" [ref=f1e84]
+          - generic [ref=f1e85]:
+            - generic [ref=f1e86]: Title
+            - textbox "Title" [ref=f1e87]
+          - generic [ref=f1e88]:
+            - generic [ref=f1e89]: Start date
+            - textbox "Start date" [ref=f1e90]
+          - generic [ref=f1e91]:
+            - generic [ref=f1e92]:
+              - generic [ref=f1e93]: End date
+              - textbox "End date" [ref=f1e94]
+            - generic [ref=f1e95]:
+              - checkbox "This is my current role" [ref=f1e96]
+              - text: This is my current role
+          - generic [ref=f1e98]:
+            - generic [ref=f1e99]: Description
+            - textbox "Description" [ref=f1e100]
+        - button "Add work experience" [ref=f1e102] [cursor=pointer]
+      - generic [ref=f1e103]:
+        - heading "Skills" [level=2] [ref=f1e104]
+        - paragraph [ref=f1e106]: No skills added yet.
+        - generic [ref=f1e107]:
+          - generic [ref=f1e108]:
+            - generic [ref=f1e109]: Skill
+            - textbox "Skill" [ref=f1e110]
+          - generic [ref=f1e111]:
+            - generic [ref=f1e112]: Category (optional)
+            - textbox "Category (optional)" [ref=f1e113]
+          - button "Add" [ref=f1e114] [cursor=pointer]

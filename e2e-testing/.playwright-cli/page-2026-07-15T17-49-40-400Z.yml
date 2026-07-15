@@ -1,0 +1,35 @@
+- generic [ref=f1e18]:
+  - banner [ref=f1e19]:
+    - generic [ref=f1e20]:
+      - generic [ref=f1e21]: ResumeRocket
+      - navigation [ref=f1e22]:
+        - link "Profile" [ref=f1e23] [cursor=pointer]:
+          - /url: /profile
+        - link "Tailor a Resume" [ref=f1e24] [cursor=pointer]:
+          - /url: /tailor
+        - link "My Resumes" [active] [ref=f1e25] [cursor=pointer]:
+          - /url: /resumes
+        - button "Sign out" [ref=f1e26] [cursor=pointer]
+  - main [ref=f1e27]:
+    - generic [ref=f1e173]:
+      - generic [ref=f1e174]:
+        - heading "My Resumes" [level=1] [ref=f1e175]
+        - link [ref=f1e176] [cursor=pointer]:
+          - /url: /tailor
+          - button "Tailor a new resume" [ref=f1e177]
+      - generic [ref=f1e178]:
+        - generic [ref=f1e179]:
+          - generic [ref=f1e180]: Filter by company
+          - textbox "Filter by company" [ref=f1e181]
+        - button "Compare selected (0/2)" [disabled] [ref=f1e182]
+      - list [ref=f1e183]:
+        - listitem [ref=f1e184]:
+          - generic [ref=f1e185]:
+            - checkbox "Select We are looking for a Senior Software Eng... for comparison" [ref=f1e186]
+            - generic [ref=f1e187]:
+              - link "We are looking for a Senior Software Eng..." [ref=f1e188] [cursor=pointer]:
+                - /url: /resumes/9
+              - paragraph [ref=f1e189]: Senior Software Engineer at Acme Corp · draft · 7/15/2026
+          - generic [ref=f1e190]:
+            - button "Clone" [ref=f1e191] [cursor=pointer]
+            - button "Regenerate" [ref=f1e192] [cursor=pointer]

@@ -1,0 +1,47 @@
+- generic [ref=f1e18]:
+  - banner [ref=f1e19]:
+    - generic [ref=f1e20]:
+      - generic [ref=f1e21]: ResumeRocket
+      - navigation [ref=f1e22]:
+        - link "Profile" [ref=f1e23] [cursor=pointer]:
+          - /url: /profile
+        - link "Tailor a Resume" [ref=f1e24] [cursor=pointer]:
+          - /url: /tailor
+        - link "My Resumes" [ref=f1e25] [cursor=pointer]:
+          - /url: /resumes
+        - button "Sign out" [ref=f1e26] [cursor=pointer]
+  - main [ref=f1e27]:
+    - generic [ref=f1e193]:
+      - generic [ref=f1e194]:
+        - generic [ref=f1e195]:
+          - generic [ref=f1e196]:
+            - generic [ref=f1e197]: Resume name
+            - textbox "Resume name" [ref=f1e198]: We are looking for a Senior Software Eng... (Copy)
+          - generic [ref=f1e199]:
+            - generic [ref=f1e200]: Company
+            - textbox "Company" [ref=f1e201]: Acme Corp
+          - generic [ref=f1e202]:
+            - generic [ref=f1e203]: Job title
+            - textbox "Job title" [ref=f1e204]: Senior Software Engineer
+        - button "Save details" [ref=f1e206] [cursor=pointer]
+      - generic [ref=f1e207]:
+        - heading "AI Suggestions" [level=2] [ref=f1e208]
+        - paragraph [ref=f1e209]: No AI suggestions for this resume.
+      - generic [ref=f1e210]:
+        - heading "Template & Export" [level=2] [ref=f1e211]
+        - generic [ref=f1e212]:
+          - button [ref=f1e213] [cursor=pointer]:
+            - paragraph [ref=f1e214]: Modern
+            - paragraph [ref=f1e215]: modern style
+          - button [ref=f1e216] [cursor=pointer]:
+            - paragraph [ref=f1e217]: Classic
+            - paragraph [ref=f1e218]: classic style
+          - button [ref=f1e219] [cursor=pointer]:
+            - paragraph [ref=f1e220]: Technical
+            - paragraph [ref=f1e221]: technical style
+        - generic [ref=f1e222]:
+          - generic [ref=f1e223]:
+            - button "PDF" [ref=f1e224] [cursor=pointer]
+            - button "DOCX" [ref=f1e225] [cursor=pointer]
+            - button "ATS Plain Text" [ref=f1e226] [cursor=pointer]
+          - button "Download" [disabled] [ref=f1e228]

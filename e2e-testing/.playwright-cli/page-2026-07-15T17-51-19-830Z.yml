@@ -1,0 +1,103 @@
+- generic [ref=f2e3]:
+  - banner [ref=f2e4]:
+    - generic [ref=f2e5]:
+      - generic [ref=f2e6]: ResumeRocket
+      - navigation [ref=f2e7]:
+        - link "Profile" [ref=f2e8] [cursor=pointer]:
+          - /url: /profile
+        - link "Tailor a Resume" [ref=f2e9] [cursor=pointer]:
+          - /url: /tailor
+        - link "My Resumes" [ref=f2e10] [cursor=pointer]:
+          - /url: /resumes
+        - button "Sign out" [ref=f2e11] [cursor=pointer]
+  - main [ref=f2e12]:
+    - generic [ref=f2e14]:
+      - generic [ref=f2e15]:
+        - heading "Your Master Profile" [level=1] [ref=f2e16]
+        - generic [ref=f2e17]:
+          - generic [ref=f2e18]:
+            - generic [ref=f2e19]: Full name
+            - textbox "Full name" [ref=f2e20]
+          - generic [ref=f2e21]:
+            - generic [ref=f2e22]: Email
+            - textbox "Email" [ref=f2e23]
+          - generic [ref=f2e24]:
+            - generic [ref=f2e25]: Phone
+            - textbox "Phone" [ref=f2e26]
+          - generic [ref=f2e27]:
+            - generic [ref=f2e28]: Location
+            - textbox "Location" [ref=f2e29]
+          - generic [ref=f2e31]:
+            - generic [ref=f2e32]: Links (portfolio, LinkedIn, GitHub — comma-separated)
+            - textbox "Links (portfolio, LinkedIn, GitHub — comma-separated)" [ref=f2e33]
+        - button "Save profile" [ref=f2e35] [cursor=pointer]
+      - generic [ref=f2e36]:
+        - heading "Education" [level=2] [ref=f2e37]
+        - list [ref=f2e38]:
+          - paragraph [ref=f2e109]: No education added yet.
+        - generic [ref=f2e40]:
+          - generic [ref=f2e41]:
+            - generic [ref=f2e42]: Institution
+            - textbox "Institution" [ref=f2e43]
+          - generic [ref=f2e44]:
+            - generic [ref=f2e45]: Credential
+            - textbox "Credential" [ref=f2e46]
+          - generic [ref=f2e47]:
+            - generic [ref=f2e48]: Field of study
+            - textbox "Field of study" [ref=f2e49]
+          - generic [ref=f2e50]:
+            - generic [ref=f2e51]:
+              - generic [ref=f2e52]: Start date
+              - textbox "Start date" [ref=f2e53]
+            - generic [ref=f2e54]:
+              - generic [ref=f2e55]: End date
+              - textbox "End date" [ref=f2e56]
+          - generic [ref=f2e58]:
+            - generic [ref=f2e59]: Description
+            - textbox "Description" [ref=f2e60]
+        - button "Add education" [ref=f2e62] [cursor=pointer]
+      - generic [ref=f2e63]:
+        - heading "Work Experience" [level=2] [ref=f2e64]
+        - list [ref=f2e65]:
+          - listitem [ref=f2e110]:
+            - generic [ref=f2e111]:
+              - paragraph [ref=f2e112]: Software Engineer · Acme Corp
+              - paragraph [ref=f2e113]: 2021-06-01 – Present
+              - paragraph [ref=f2e114]: Building scalable web applications
+            - generic [ref=f2e115]:
+              - button "Edit" [ref=f2e116] [cursor=pointer]
+              - button "Delete" [ref=f2e117] [cursor=pointer]
+        - generic [ref=f2e67]:
+          - generic [ref=f2e68]:
+            - generic [ref=f2e69]: Company
+            - textbox "Company" [ref=f2e70]
+          - generic [ref=f2e71]:
+            - generic [ref=f2e72]: Title
+            - textbox "Title" [ref=f2e73]
+          - generic [ref=f2e74]:
+            - generic [ref=f2e75]: Start date
+            - textbox "Start date" [ref=f2e76]
+          - generic [ref=f2e77]:
+            - generic [ref=f2e78]:
+              - generic [ref=f2e79]: End date
+              - textbox "End date" [ref=f2e80]
+            - generic [ref=f2e81]:
+              - checkbox "This is my current role" [ref=f2e82]
+              - text: This is my current role
+          - generic [ref=f2e84]:
+            - generic [ref=f2e85]: Description
+            - textbox "Description" [ref=f2e86]
+        - button "Add work experience" [ref=f2e88] [cursor=pointer]
+      - generic [ref=f2e89]:
+        - heading "Skills" [level=2] [ref=f2e90]
+        - generic [ref=f2e118]:
+          - text: TypeScript
+          - button "Remove TypeScript" [ref=f2e119] [cursor=pointer]: ×
+        - generic [ref=f2e93]:
+          - generic [ref=f2e94]:
+            - generic [ref=f2e95]: Skill
+            - textbox "Skill" [ref=f2e96]
+          - generic [ref=f2e97]:
+            - generic [ref=f2e98]: Category (optional)
+            - textbox "Category (optional)" [ref=f2e99]
+          - button "Add" [ref=f2e100] [cursor=pointer]

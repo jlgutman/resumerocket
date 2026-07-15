@@ -21,6 +21,22 @@ test.describe("Authentication", () => {
     await expect(page).toHaveURL(/\/profile$/);
   });
 
+  test("shows an error when registering with an email already in use", async ({ page }) => {
+    const user = await registerNewUser(page, "dup");
+
+    await page.getByRole("button", { name: "Sign out" }).click();
+    await page.goto("/register");
+    await page.getByLabel("Full name").fill("Another Person");
+    await page.getByLabel("Email").fill(user.email);
+    await page.getByLabel("Password").fill("SuperSecret123");
+    await page.getByRole("button", { name: "Create account" }).click();
+
+    await expect(
+      page.getByText("Could not create an account with those details.")
+    ).toBeVisible();
+    await expect(page).toHaveURL(/\/register$/);
+  });
+
   test("shows an error for invalid login credentials", async ({ page }) => {
     await page.goto("/login");
     await page.getByLabel("Email").fill("nonexistent-user@example.com");

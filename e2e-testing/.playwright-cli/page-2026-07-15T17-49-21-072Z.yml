@@ -1,0 +1,50 @@
+- generic [ref=f1e18]:
+  - banner [ref=f1e19]:
+    - generic [ref=f1e20]:
+      - generic [ref=f1e21]: ResumeRocket
+      - navigation [ref=f1e22]:
+        - link "Profile" [ref=f1e23] [cursor=pointer]:
+          - /url: /profile
+        - link "Tailor a Resume" [ref=f1e24] [cursor=pointer]:
+          - /url: /tailor
+        - link "My Resumes" [ref=f1e25] [cursor=pointer]:
+          - /url: /resumes
+        - button "Sign out" [ref=f1e26] [cursor=pointer]
+  - main [ref=f1e27]:
+    - generic [ref=f1e136]:
+      - generic [ref=f1e137]:
+        - generic [ref=f1e138]:
+          - generic [ref=f1e139]:
+            - generic [ref=f1e140]: Resume name
+            - textbox "Resume name" [ref=f1e141]: We are looking for a Senior Software Eng...
+          - generic [ref=f1e142]:
+            - generic [ref=f1e143]: Company
+            - textbox "Company" [ref=f1e144]: Acme Corp
+          - generic [ref=f1e145]:
+            - generic [ref=f1e146]: Job title
+            - textbox "Job title" [ref=f1e147]: Senior Software Engineer
+        - button "Save details" [ref=f1e149] [cursor=pointer]
+      - generic [ref=f1e150]:
+        - heading "AI Suggestions" [level=2] [ref=f1e151]
+        - paragraph [ref=f1e152]: No AI suggestions for this resume.
+      - generic [ref=f1e153]:
+        - heading "Template & Export" [level=2] [ref=f1e154]
+        - generic [ref=f1e155]:
+          - button [active] [ref=f1e156] [cursor=pointer]:
+            - paragraph [ref=f1e157]: Modern
+            - paragraph [ref=f1e158]: modern style
+          - button [ref=f1e159] [cursor=pointer]:
+            - paragraph [ref=f1e160]: Classic
+            - paragraph [ref=f1e161]: classic style
+          - button [ref=f1e162] [cursor=pointer]:
+            - paragraph [ref=f1e163]: Technical
+            - paragraph [ref=f1e164]: technical style
+        - generic [ref=f1e165]:
+          - generic [ref=f1e166]:
+            - button "PDF" [ref=f1e167] [cursor=pointer]
+            - button "DOCX" [ref=f1e168] [cursor=pointer]
+            - button "ATS Plain Text" [ref=f1e169] [cursor=pointer]
+          - button "Download" [ref=f1e171] [cursor=pointer]
+      - generic [ref=f1e172]:
+        - heading [level=1]
+        - paragraph
