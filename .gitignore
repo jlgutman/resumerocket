@@ -1,5 +1,6 @@
 # Backend (Maven / Java)
 backend/target/
+backend/data/
 *.class
 *.jar
 !.mvn/wrapper/maven-wrapper.jar
@@ -12,7 +13,9 @@ frontend/.vite/
 # Env
 .env
 *.env.local
+*.env.example
 backend/.env
+backend/*.env.example
 frontend/.env
 
 # IDE
