@@ -1,0 +1,9 @@
+CREATE TABLE user_account (
+    id            BIGINT AUTO_INCREMENT PRIMARY KEY,
+    email         VARCHAR(255) NOT NULL,
+    password_hash VARCHAR(255) NOT NULL,
+    full_name     VARCHAR(255) NOT NULL,
+    created_at    TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    updated_at    TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+    CONSTRAINT uk_user_account_email UNIQUE (email)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;

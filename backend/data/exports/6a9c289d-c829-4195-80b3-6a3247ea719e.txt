@@ -1,0 +1,23 @@
+Jose Gutierrez
+jlgutman@gmail.com | 6293218676 | Nashville, TN | 
+
+SUMMARY
+Results-driven Senior Software Engineer with extensive experience in designing and deploying cloud-native Java microservices. Proven track record in building high-throughput distributed systems and integrating with healthcare IT solutions. Passionate about leveraging AI tools to enhance development workflows and ensure code quality.
+
+SKILLS
+Java, React, AWS (S3, Lambda, RDS, EKS, ECS), Kafka, HL7, FHIR, NCPDP SCRIPT, CI/CD (GitLab CI, Jenkins), AI coding assistants (Claude, ChatGPT, Copilot)
+
+EXPERIENCE
+Senior Software Engineer - ABC Company
+2025-07-14 - Present
+- - Design, build, and maintain scalable backend/frontend systems, taking ownership of features from technical design through deployment and production monitoring.
+- Mentor junior and mid-level engineers through code reviews, pairing, and technical guidance, while raising the team's overall engineering standards.
+- Collaborate with product, design, and cross-functional stakeholders to translate business requirements into robust, well-architected technical solutions.
+- - Design, build, and deploy high-quality Java microservices that power real-time clinical workflows, ensuring scalability and fault tolerance.
+- - Review code and mentor junior engineers, contributing to architecture decisions and ensuring adherence to secure coding practices.
+- - Collaborate with product managers and clinical informaticists to ship integrated solutions, focusing on quality and observability.
+
+EDUCATION
+, ABC University
+Engineering
+

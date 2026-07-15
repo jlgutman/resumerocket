@@ -1,0 +1,22 @@
+services:
+  mysql:
+    image: mysql:8.4
+    container_name: resumerocket-mysql
+    restart: unless-stopped
+    environment:
+      MYSQL_DATABASE: resumerocket
+      MYSQL_USER: resumerocket
+      MYSQL_PASSWORD: resumerocket
+      MYSQL_ROOT_PASSWORD: resumerocket_root
+    ports:
+      - "3306:3306"
+    volumes:
+      - resumerocket-mysql-data:/var/lib/mysql
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-u", "root", "-presumerocket_root"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+volumes:
+  resumerocket-mysql-data:
