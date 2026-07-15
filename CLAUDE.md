@@ -81,6 +81,13 @@ React 18 + TypeScript + Vite, styled with Tailwind. Routing (`react-router-dom`)
 - Structure split: `pages/` are route-level screens, `features/<domain>/` hold domain components (profile editors, suggestion review, version compare, export panel), `services/` are the API wrappers, `components/` are shared primitives.
 - `VITE_API_BASE_URL` (`.env`) points the client at the backend; defaults to `http://localhost:8080/api/v1`.
 
+## Testing conventions
+
+Repo-specific gotchas (general good practice omitted):
+- **Backend** (JUnit 5 + Spring Boot Test): no `src/test` tree exists yet — first tests establish `src/test/java/com/resumerocket/<feature>/`. Integration tests use Testcontainers MySQL (needs Docker) with **Flyway owning the schema** (`ddl-auto: validate`, same `V*__*.sql` migrations — never `create`). Mock the `tailoring/` `ChatClient` — never hit OpenAI, and don't require `OPENAI_API_KEY`. Run `mvn spotless:apply` after (formatting is unbound from the build).
+- **Frontend** (vitest, config in `vite.config.ts`): no `*.test.tsx` files yet. `globals: true`, so don't import `describe/it/expect`. Mock at `services/*.ts` / the `apiClient` axios instance and wrap in `QueryClientProvider` (+ `AuthContext`/`MemoryRouter` as needed) — no real network calls.
+- **E2E** (`e2e-testing/`, Playwright): drives the **real stack, no mocking** — MySQL + backend + frontend must be up (Playwright only starts Vite). Follow existing `tests/*.spec.ts`: role-based selectors and the `utils/` helpers (`registerNewUser`, `uniqueUser`). Generate fresh unique users per test — data persists in a real DB.
+
 ## Spec-driven workflow
 
 This repo uses **spec-kit** (GitHub's spec-driven development toolkit). Feature specs, plans, and task lists live in `specs/<feature>/` (see `specs/001-ai-resume-builder/`); templates and the project constitution are in `.specify/`. The workflow is driven by the `speckit-*` skills (`speckit-specify` → `speckit-plan` → `speckit-tasks` → `speckit-implement`, plus `clarify`/`analyze`/`checklist`/`converge`). When implementing a feature, check `specs/<feature>/` for the authoritative spec, plan, and `tasks.md`.
