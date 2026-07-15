@@ -9,8 +9,7 @@
     "preview": "vite preview",
     "lint": "eslint . --ext ts,tsx",
     "format": "prettier --write .",
-    "test": "vitest run",
-    "test:e2e": "playwright test"
+    "test": "vitest run"
   },
   "dependencies": {
     "@tanstack/react-query": "^5.59.0",
@@ -20,7 +19,6 @@
     "react-router-dom": "^6.27.0"
   },
   "devDependencies": {
-    "@playwright/test": "^1.48.0",
     "@testing-library/jest-dom": "^6.5.0",
     "@testing-library/react": "^16.0.1",
     "@types/react": "^18.3.11",
