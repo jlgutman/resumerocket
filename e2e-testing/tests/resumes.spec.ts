@@ -1,6 +1,7 @@
 import { test, expect } from "@playwright/test";
 import { registerNewUser } from "../utils/register";
 import { tailorResume } from "../utils/tailor";
+import { saveResumeDetails } from "../utils/save";
 
 test.describe("Tailoring and managing resumes", () => {
   test.beforeEach(async ({ page }) => {
@@ -26,7 +27,7 @@ test.describe("Tailoring and managing resumes", () => {
     await page.getByLabel("Resume name").fill("Backend Engineer @ Acme");
     await page.getByLabel("Company").fill("Acme Corp");
     await page.getByLabel("Job title").fill("Backend Engineer");
-    await page.getByRole("button", { name: "Save details" }).click();
+    await saveResumeDetails(page);
 
     await page.reload();
     await expect(page.getByLabel("Resume name")).toHaveValue("Backend Engineer @ Acme");
@@ -47,7 +48,7 @@ test.describe("Tailoring and managing resumes", () => {
   test("can clone a resume", async ({ page }) => {
     await tailorResume(page, "DevOps Engineer role focused on Kubernetes and CI/CD.");
     await page.getByLabel("Company").fill("Acme Corp");
-    await page.getByRole("button", { name: "Save details" }).click();
+    await saveResumeDetails(page);
 
     await page.getByRole("link", { name: "My Resumes" }).click();
     await page.getByRole("button", { name: "Clone" }).click();
@@ -71,11 +72,11 @@ test.describe("Tailoring and managing resumes", () => {
   test("can filter resumes by company", async ({ page }) => {
     await tailorResume(page, "Engineer role at a large company.");
     await page.getByLabel("Company").fill("Acme Corp");
-    await page.getByRole("button", { name: "Save details" }).click();
+    await saveResumeDetails(page);
 
     await tailorResume(page, "Engineer role at another company.");
     await page.getByLabel("Company").fill("Globex Inc");
-    await page.getByRole("button", { name: "Save details" }).click();
+    await saveResumeDetails(page);
 
     await page.getByRole("link", { name: "My Resumes" }).click();
     await page.getByLabel("Filter by company").fill("Globex");

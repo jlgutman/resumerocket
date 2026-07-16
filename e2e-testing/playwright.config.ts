@@ -9,6 +9,10 @@ export default defineConfig({
   retries: process.env.CI ? 2 : 0,
   workers: process.env.CI ? 1 : undefined,
   reporter: "html",
+  // The tailoring flow waits on a real OpenAI call, which routinely runs past
+  // the 5s default and makes any assertion downstream of it flaky.
+  timeout: 60_000,
+  expect: { timeout: 30_000 },
   use: {
     baseURL,
     trace: "on-first-retry",
