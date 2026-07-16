@@ -27,3 +27,6 @@ frontend/.env
 # Logs
 *.log
 backend/.env.example
+
+# Local subagent call log (SubagentStart hook)
+.claude/subagent-calls.log

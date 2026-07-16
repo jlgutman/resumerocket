@@ -88,6 +88,13 @@ Repo-specific gotchas (general good practice omitted):
 - **Frontend** (vitest, config in `vite.config.ts`): no `*.test.tsx` files yet. `globals: true`, so don't import `describe/it/expect`. Mock at `services/*.ts` / the `apiClient` axios instance and wrap in `QueryClientProvider` (+ `AuthContext`/`MemoryRouter` as needed) — no real network calls.
 - **E2E** (`e2e-testing/`, Playwright): drives the **real stack, no mocking** — MySQL + backend + frontend must be up (Playwright only starts Vite). Follow existing `tests/*.spec.ts`: role-based selectors and the `utils/` helpers (`registerNewUser`, `uniqueUser`). Generate fresh unique users per test — data persists in a real DB.
 
+## Subagents
+
+Two project subagents live in `.claude/agents/`. Route to them as follows:
+
+- **`test-runner`** (`.claude/agents/test-runner.md`) — verifies a change actually works by running the relevant backend (Maven/Testcontainers), frontend (vitest/build/lint), and e2e (Playwright) suites, and exercising the running app via curl/Playwright. Route here after implementing a non-trivial feature or bug fix, before declaring a task complete, or on "test this" / "verify it works" / "check for regressions" / "run QA". It exercises running code — it is *not* a static reviewer of a diff.
+- **`analyzer`** (`.claude/agents/analyzer.md`) — cheap read-only analyst for whole-file reading and cross-file reasoning. Route here to summarize how a feature works end-to-end, audit cross-file consistency (DTO ↔ entity ↔ migration ↔ frontend service), trace a flow across tiers, or check whether code matches a spec. Prefer the built-in `Explore` agent for pure "where is X defined" lookups; reach for `analyzer` when the answer requires reading and reasoning over whole files. Read-only — it never edits code.
+
 ## Spec-driven workflow
 
 This repo uses **spec-kit** (GitHub's spec-driven development toolkit). Feature specs, plans, and task lists live in `specs/<feature>/` (see `specs/001-ai-resume-builder/`); templates and the project constitution are in `.specify/`. The workflow is driven by the `speckit-*` skills (`speckit-specify` → `speckit-plan` → `speckit-tasks` → `speckit-implement`, plus `clarify`/`analyze`/`checklist`/`converge`). When implementing a feature, check `specs/<feature>/` for the authoritative spec, plan, and `tasks.md`.

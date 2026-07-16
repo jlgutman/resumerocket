@@ -3,5 +3,17 @@
     "allow": [
       "Bash(npx tsc *)"
     ]
+  },
+  "hooks": {
+    "SubagentStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "jq -c '. + {logged_at: (now|todateiso8601)}' >> .claude/subagent-calls.log 2>/dev/null || true"
+          }
+        ]
+      }
+    ]
   }
 }
