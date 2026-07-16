@@ -7,6 +7,9 @@ import { Button } from "../components/Button";
 import { EducationEntries } from "../features/profile/EducationEntries";
 import { WorkExperienceEntries } from "../features/profile/WorkExperienceEntries";
 import { SkillsList } from "../features/profile/SkillsList";
+import { ResumeUploadButton } from "../features/resumeImport/ResumeUploadButton";
+import { ResumeImportReview } from "../features/resumeImport/ResumeImportReview";
+import type { ResumeImportResult } from "../services/resumeImportService";
 
 const EMPTY_CONTACT: ContactInfo = { fullName: "", email: "", phone: "", location: "", links: "" };
 
@@ -19,6 +22,7 @@ export default function ProfilePage() {
 
   const [contactInfo, setContactInfo] = useState<ContactInfo>(EMPTY_CONTACT);
   const [savedMessageVisible, setSavedMessageVisible] = useState(false);
+  const [importResult, setImportResult] = useState<ResumeImportResult | null>(null);
 
   useEffect(() => {
     if (profile) {
@@ -96,6 +100,19 @@ export default function ProfilePage() {
           )}
         </div>
       </section>
+
+      <section className="bg-white rounded-lg shadow-sm p-6">
+        <h2 className="text-lg font-semibold text-gray-900 mb-4">Prefill from a resume</h2>
+        <ResumeUploadButton onImported={setImportResult} />
+      </section>
+
+      {importResult && (
+        <ResumeImportReview
+          result={importResult}
+          currentProfile={profile}
+          onClose={() => setImportResult(null)}
+        />
+      )}
 
       <EducationEntries entries={profile.educationEntries} />
       <WorkExperienceEntries entries={profile.workExperienceEntries} />
